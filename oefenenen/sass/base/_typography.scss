@@ -1,0 +1,74 @@
+// ==================================================
+// Fonts
+// ==================================================
+$font-primary: "Hanken Grotesk", sans-serif;
+$font-secondary: "Noto Sans", sans-serif;
+
+// ==================================================
+// Typography
+// ==================================================
+h1 {
+  color: $color-2;
+  font-weight: normal;
+  font-family: $font-primary;
+  letter-spacing: -0.2px;
+  word-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+  @include responsive-font(50px, 36px, 28px, 3.5rem, 2.5rem, 2rem);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: $color-8;
+  font-weight: normal;
+  font-family: $font-primary;
+  @include responsive-font(50px, 36px, 28px, null, 2.5rem, 2rem);
+}
+
+h3 {
+  margin-bottom: 1rem;
+  color: $color-8;
+  font-weight: normal;
+  font-family: $font-primary;
+  @include responsive-font(28px, 24px, 20px);
+}
+
+h4 {
+  margin-bottom: 1rem;
+  color: $color-8;
+  font-weight: normal;
+  font-family: $font-primary;
+  @include responsive-font(20px, 18px, 16px);
+}
+
+p {
+  color: $color-2;
+  font-family: $font-primary;
+  margin-bottom: 1rem;
+  @include responsive-font(20px, 18px, 16px);
+}
+
+a {
+  color: $color-1;
+  font-family: $font-primary;
+
+  &:hover {
+    color: $color-5;
+  }
+}
+
+strong {
+  color: $color-8;
+  font-family: $font-primary;
+}
+
+label {
+  color: $color-8;
+  font-family: $font-primary;
+}
+
+input,
+textarea {
+  font-family: $font-primary;
+  font-size: 16px;
+}

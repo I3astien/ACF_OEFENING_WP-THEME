@@ -1,0 +1,106 @@
+// ==================================================
+// Container Max-Width Breakpoints
+// ==================================================
+@mixin container-max-width {
+  max-width: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 1320px;
+  }
+}
+
+// ==================================================
+// Button Wrapper
+// ==================================================
+@mixin button-wrapper {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+// ==================================================
+// Navigation Link with Underline Animation
+// ==================================================
+@mixin nav-link-underline(
+  $bottom-offset,
+  $left-start: 50%,
+  $left-hover: 0,
+  $width-hover: 100%
+) {
+  position: relative;
+  display: block;
+  color: $color-4;
+  font-family: $font-primary;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &::after {
+    position: absolute;
+    bottom: $bottom-offset;
+    left: $left-start;
+    width: 0;
+    height: 2px;
+    background-color: $color-5;
+    content: "";
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  &:hover {
+    color: $color-5;
+
+    &::after {
+      left: $left-hover;
+      width: $width-hover;
+    }
+  }
+}
+
+// ==================================================
+// Responsive Font Size
+// ==================================================
+@mixin responsive-font(
+  $desktop,
+  $tablet,
+  $mobile,
+  $line-height-desktop: null,
+  $line-height-tablet: null,
+  $line-height-mobile: null
+) {
+  font-size: $desktop;
+
+  @if $line-height-desktop {
+    line-height: $line-height-desktop;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $tablet;
+
+    @if $line-height-tablet {
+      line-height: $line-height-tablet;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $mobile;
+
+    @if $line-height-mobile {
+      line-height: $line-height-mobile;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-capitalize-first {
+  display: inline-block;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.text-small {
+  p,
+  &.form__privacy,
+  &.newsletter-form__privacy {
+    color: $color-1;
+    font-size: 16px;
+    font-family: $font-primary;
+  }
+}
+
+.color-inherit {
+  color: inherit;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  strong,
+  .btn-primary {
+    color: inherit;
+  }
+}

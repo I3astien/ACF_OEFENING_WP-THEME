@@ -1,0 +1,22 @@
+{
+  "name": "oefenenen-theme",
+  "version": "1.0.0",
+  "description": "Custom WordPress theme with ACF Flexible Content and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass/main.scss:stylesheets/main.css --style expanded --source-map",
+    "build": "sass sass/main.scss:stylesheets/main.css --style compressed --no-source-map",
+    "dev": "sass sass/main.scss:stylesheets/main.css --style expanded --source-map"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "acf",
+    "scss"
+  ],
+  "author": "Your Name",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

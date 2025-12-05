@@ -1,0 +1,31 @@
+.icon-boxes {
+  padding: 4rem 0;
+  background-color: $color-13;
+
+  &__content {
+    margin: 0 auto 3rem;
+    max-width: 50rem;
+    text-align: center;
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: $color-2;
+    text-align: left;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

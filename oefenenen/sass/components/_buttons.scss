@@ -1,0 +1,50 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 3.5rem;
+  margin: 0.125rem;
+  padding: 0 1.5625rem;
+  border: 0.125rem solid transparent;
+  border-radius: 0.5rem;
+  background-color: $color-5;
+  color: $color-2;
+  font-family: $font-secondary;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s ease;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 1rem;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    color: $color-2;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--primary {
+    border-color: $color-2;
+    background-color: transparent;
+    color: $color-2;
+
+    &:hover {
+      opacity: 0.9;
+      color: $color-2;
+      text-decoration: none;
+    }
+  }
+}
